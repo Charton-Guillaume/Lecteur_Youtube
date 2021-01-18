@@ -1,0 +1,8 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Player vidéo{% endblock %}
+
+{% block body %}
+    <h2>{{ video.nom }}</h2>
+    <div>{{ video.url | youtube_player | raw }}</div>
+{% endblock %}
